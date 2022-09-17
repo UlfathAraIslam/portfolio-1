@@ -1,0 +1,228 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+  box-sizing: border-box;
+}
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-image: url(image.jpg);
+  background-size: cover;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2%;
+}
+.logo {
+  color: white;
+  font-size: 35px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+span {
+  color: #f9004d;
+}
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav ul li :hover {
+  color: #f9004d;
+  transition: 0.4s;
+}
+.btn {
+  background-color: #f9004d;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid transparent;
+  padding: 10px;
+  border-radius: 30px;
+}
+.btn:hover {
+  transform: scale(1.2);
+  transition: transform 0.4s;
+}
+.content {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+}
+h1 {
+  color: white;
+  margin: 20px 0px;
+  font-size: 50px;
+}
+h3 {
+  color: white;
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+h4 {
+  color: #fcfc;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+.newslatter form input:first-child {
+  display: inline-block;
+  width: 100%;
+  padding: 4px;
+  border: 2px solid #f9004d;
+  outline: none;
+  border-radius: 20px;
+}
+.newslatter form input:last-child{
+display: inline-block;
+border: none;
+outline: none;
+position: absolute;
+padding: 4px;
+border-radius: 70px;
+background-color: #f9004d;
+box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+right: 3px;
+
+}
+.about{
+  width: 100%;
+  padding: 100px opx;
+  background-color: #191919;
+}
+.about-text{
+  width: 550px;
+  color: white;
+  padding: 5px;
+}
+.main{
+
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+ .about-text h2{
+  color: white;
+  font-size: 75px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+ }
+  .about-text h5{
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+
+  }
+   .about-text p{
+    color: #fcfc;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+
+   }
+   button{
+    background-color: #f9004d;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid transparent;
+  padding: 10px;
+  border-radius: 30px;
+   }
+   button:hover{
+    background-color: transparent;
+    border: 2px solid #f9004d;
+   cursor: pointer;
+
+   }
+   .service{
+    background: #101010;
+    width: 100%;
+    padding: 100px 60px;
+
+   }
+   .title h2{
+    color: white;
+    text-align: center;
+    font-size: 75px;
+    margin: 30px auto;
+   }
+   .box{
+    display: flex;
+   justify-content: center;
+   text-align: center;
+   min-height: 400px;
+
+   }
+   .card{
+    background: #191919;
+    height: 300px;
+    width: 300px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    margin: 15px;
+    padding: 30px;
+   
+   }
+   h5{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+   }
+   .pra p{
+    color: #fcfc;
+    line-height: 20px;
+     padding: 20px;
+    
+   }
+  .card .button{
+    background-color: #f9004d;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid transparent;
+  padding: 5px;
+  border-radius: 30px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  
+  }
+   .card .button:hover{
+    background-color: transparent;
+    border: 2px solid #f9004d;
+   cursor: pointer;
+  }
+  .contact-me{
+    background-color: #191919;
+    text-align: center;
+    padding: 100px;
+  }
+  .contact-me p{
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+  
+  @media only screen and (max-width:800px){
+.hero, .about, .service{
+  width: 100vw;
+}
+  }
+   @media only screen and (max-width:600px){
+.hero, .service{
+  width: 100vw;
+}
+  }
